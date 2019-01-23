@@ -1,4 +1,4 @@
-from django.shortcuts import render
+﻿from django.shortcuts import render
 from . forms import KakeiboForm  #forms.pyからKakeiboFormをインポート
 from django.urls import reverse_lazy #ページ遷移メソッドをインポート
 
@@ -90,18 +90,6 @@ def show_circle_grahp(request):
             ratio = 0
             category_dict[item] = ratio
         
-    return render(request, 'kakeibo/kakeibo_circle.html',{
-        'category_dict': category_dict,
-         } )
-
-
-
-
-
-
-
-
-
     return render(request, 'kakeibo/kakeibo_circle.html',{
         'category_dict': category_dict,
          } )
